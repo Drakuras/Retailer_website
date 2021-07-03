@@ -1,9 +1,10 @@
 body{
-    background-color: rgb(213, 249, 255);
+    background-color: rgb(242, 253, 255);
     color: rgb(255, 255, 255);
     margin: 0%;
     font-family: Arial, Helvetica, sans-serif;
 }
+/* Navigation bar css */
 nav{
     top: 0; 
     width: 100%;
@@ -94,13 +95,14 @@ input:focus{
     
 }
 
+/* Mid Area Css */
 .container{
     margin-top: 40px;
-    margin: 10px;
+    margin: 30px;
     display: grid;
     gap: 20px;
     grid-template-columns: 20em 20em auto;
-    grid-template-rows: 10em 20em 20em;
+    grid-template-rows: 40em 20em 20em;
     grid-template-areas:
     "main main main"
     "section section2 lastarea"
@@ -112,8 +114,10 @@ input:focus{
     background: url(./assets/mount-everest-summit-climbers-getty.jpg);
     background-position: center;
     grid-area: main;
-    padding: 3vh;
+    padding: 5vh;
+    color: black;
 }
+
 .box2{
     background-color: rgb(78, 78, 78);
     background: url(./assets/Best_ski_googles_2-1200x520.jpg);
@@ -151,14 +155,48 @@ input:focus{
     grid-area: lastarea;
 }
 
+/* Bottom area of the HTML */
+
 footer{
-    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 10px;
     height: 40em;
-    width: auto;
-    background-color: rgb(221, 219, 219);
+    width: 100%;
+    color: rgb(139, 139, 139);
+    background-color: rgb(231, 231, 231);
+}
+
+.moreinfo{
+    margin-top: 30px;
+}
+.moreinfo ul{
+    padding-left: 0;
+}
+.moreinfo ul li{
+    padding-top: 10px;
+    list-style: none;
+}
+.moreinfo ul li a{
+    font-size: 14px;
+    color: rgb(82, 82, 82);
+    
+    text-decoration: none;
+
+}
+hr{
+    background-color: grey;
+    height: 1px;
+    width: 100%;
+    border-radius: 5px;
 }
 .bottom{
-    color: grey;
+    display: flex;
+    color: rgb(77, 77, 77);
     background-color: rgb(255, 255, 255);
+    vertical-align: bottom;
     padding: 20px;
+    font-size: 12px;
+    justify-content: space-around;
 }
+
