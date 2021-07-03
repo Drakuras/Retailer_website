@@ -1,15 +1,32 @@
 body{
+    background-color: rgb(0, 0, 0);
     color: white;
     margin: 0%;
     font-family: Arial, Helvetica, sans-serif;
 }
 nav{
-    margin-top: 30px;
+    top: 0; 
     width: 100%;
+    transition-duration: 500ms;
+
+}
+nav.sticky{
+    color: rgb(0, 255, 242);
+    font-size: 10px;
+    position: sticky; 
+}
+nav.sticky #topnav{
+    height: 30px;
+}
+nav.sticky #topnav h1{
+    padding: 6px;
+}
+nav.sticky #bottomnav{
+    height: 5px;
+    display: none;
 }
 #topnav{
     display: flex;
-    
     height: 100px;
     background-color: rgb(31, 31, 31);
 }
@@ -20,56 +37,71 @@ input{
     border: none;
     border-bottom: 3px solid grey;
     border-color: rgb(110, 110, 110);
-    margin-top: 20px;
-    width: 50em;
+    width: 20em;
     height: 3em;
-
+    color: white;
     padding: 5px;
     margin-left: auto;
     background-color: inherit;
     
 
 }
+input:focus{
+    outline-width: 0px;
+}
 #bottomnav{
     background-color: rgb(63, 63, 63);
-    height: 50px;
-    text-align: center;
-    color: black;
-    padding: 20px;
+    height: 20px;
+    text-align:center;
+    color: rgb(255, 255, 255);
     font-weight: bolder;
+    padding: 1em;
+
 
 }
-#nav, hr{
-    margin-top: 30px;
-    width: 95%;
-    height: 3px;
-    background-color: black;
-    border-radius: 30px;
-}
-.container1{
+
+.container{
+    margin-top: 40px;
+    margin: 10px;
     display: grid;
-    grid-template-columns: 3fr 3fr 3fr; 
-    grid-template-rows: 1fr 1fr 1fr; 
-    grid-template-areas: 
-    "box1"
-    "box2 box3";
-
-
-
+    gap: 10px;
+    grid-template-columns: 20em 20em auto;
+    grid-template-rows: 20em 20em 20em;
+    grid-template-areas:
+    "main main main"
+    "section section2 lastarea"
+    "section3 section4 lastarea"; 
 }
+
 .box1{
-    grid-area: "box1";
-    border: 3px solid black;
+    background-color: rgb(85, 89, 126);
+    grid-area: main;
+    padding: 3vh;
 }
 .box2{
-    grid-area: "box2";
-    border: 3px solid black;
+    background-color: rgb(149, 255, 128);
+    grid-area: section;
 }
 .box3{
-    grid-area: "box3";
-    border: 3px solid black;
+    background-color: rgb(241, 255, 41);
+    grid-area: section2;
 }
 .box4{
-    grid-area: "box4";
-    border: 3px solid black;
+    background-color: rgb(255, 41, 41);
+    grid-area: section3;
+}
+.box5{
+    background-color: rgb(194, 41, 255);
+    grid-area: section4;
+}
+.box6{
+    background-color: rgb(19, 188, 255);
+    grid-area: lastarea;
+}
+
+footer{
+    margin-top: 30px;
+    height: 40em;
+    width: auto;
+    background-color: rgb(255, 255, 255);
 }
