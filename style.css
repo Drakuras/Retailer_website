@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(242, 253, 255);
+    background-color: rgb(255, 255, 255);
     color: rgb(255, 255, 255);
     margin: 0%;
     font-family: Arial, Helvetica, sans-serif;
@@ -14,7 +14,7 @@ nav{
 }
 nav.sticky{
     color: rgb(0, 255, 242);
-
+    z-index:1;
     position: sticky; 
 }
 
@@ -54,7 +54,6 @@ nav.sticky #bottomnav{
 }
 nav.sticky #topnav{
     height: 60px;
-
 }
 #topnav img{
     transition-duration: 500ms;
@@ -62,34 +61,41 @@ nav.sticky #topnav{
 }
 nav.sticky #topnav img{
     -webkit-filter: invert();
-
 }
-.rightnav{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
+.navicons{
+    display: flex;
+    padding-top: 31px;
+    width: 15em;
+    justify-content: space-evenly;
+    
+}
+.navicons a:hover{
+    -webkit-filter:invert();
+}
+.navicons a i{
+    color: white;
 }
 
-input{
+#Search{
     border: none;
     border-bottom: 3px solid grey;
     border-color: rgb(110, 110, 110);
-    width: 20em;
+    width: 19em;
     height: 3em;
     color: white;
-    padding: 5px;
-    margin-left: auto;
     background-color: inherit;
+    position: relative;
+    margin-top: 1.3em;
+}
+nav.sticky input{
     
+}
 
-}
-input:focus{
-    outline-width: 0px;
-}
 #bottomnav{
     background-color: rgb(63, 63, 63);
     height: 20px;
     text-align:center;
-    color: rgb(255, 255, 255);
+    color: rgb(255, 95, 95);
     font-weight: bolder;
     padding: 1em;
     
@@ -98,11 +104,11 @@ input:focus{
 /* Mid Area Css */
 .container{
     margin-top: 40px;
-    margin: 30px;
+    margin: 0px;
     display: grid;
-    gap: 20px;
+    gap: 10px;
     grid-template-columns: 20em 20em auto;
-    grid-template-rows: 40em 20em 20em;
+    grid-template-rows: 30em 20em 20em;
     grid-template-areas:
     "main main main"
     "section section2 lastarea"
@@ -115,8 +121,24 @@ input:focus{
     background-position: center;
     grid-area: main;
     padding: 5vh;
-    color: black;
+    text-align: center;
+    color: rgb(0, 0, 0);
 }
+.box1mid{
+    display: flex;
+    justify-content: space-evenly;
+}
+.box1mid a {
+    background-color: black;
+    border: 10px solid rgb(255, 255, 255);
+    height: 40px;
+    width: 150px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+}
+
+
 
 .box2{
     background-color: rgb(78, 78, 78);
@@ -136,18 +158,16 @@ input:focus{
     grid-area: section3;
 }
 .box5{
-    display: inline-block;
+
     text-align: center;
     border-radius: 100%;
-    background-color: rgb(255, 0, 0);;
+    background-color: rgb(255, 131, 22);;
     grid-area: section4;
 }
 .box5 img{
-    overflow: hidden;
     margin-top: 25px;
     width: 260px;
     height: 260px;
-    transition-duration: 1000ms;
 }
 .box6{
     background: url(./assets/marcel-hirscher-colours-making-of.jfif);
@@ -158,12 +178,13 @@ input:focus{
 /* Bottom area of the HTML */
 
 footer{
+    margin-top: 30px;
     display: flex;
     justify-content: space-evenly;
     font-size: 10px;
     height: 40em;
     width: 100%;
-    color: rgb(139, 139, 139);
+    color: rgb(43, 43, 43);
     background-color: rgb(231, 231, 231);
 }
 
@@ -179,7 +200,7 @@ footer{
 }
 .moreinfo ul li a{
     font-size: 14px;
-    color: rgb(82, 82, 82);
+    color: rgb(39, 38, 38);
     
     text-decoration: none;
 
@@ -192,7 +213,7 @@ hr{
 }
 .bottom{
     display: flex;
-    color: rgb(77, 77, 77);
+    color: rgb(90, 90, 90);
     background-color: rgb(255, 255, 255);
     vertical-align: bottom;
     padding: 20px;
