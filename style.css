@@ -23,7 +23,7 @@ nav.sticky{
 /* top part of the navigation bar */
 #topnav{
     display: flex;
-    height: 100px;
+    height: 80px;
     background-color: rgb(31, 31, 31);
     transition-duration: 100ms;
     margin-bottom: -16px;
@@ -86,6 +86,13 @@ nav.sticky #topnav img{
     color: white;
     background-color: inherit;
     margin-top: 1.3em;
+}
+input {
+    border-radius: 0;
+}
+  
+input[type="search"] {
+    -webkit-appearance: none;
 }
 
 /* Bottom part of the navigation */
@@ -330,6 +337,10 @@ hr{
     html, body {
         overflow-x:hidden;
     }
+    .innerbox:hover{
+        visibility: visible;
+    
+    }
     
     .container{
         margin: 0px;
@@ -380,7 +391,7 @@ hr{
         background-color: inherit;
         margin-top: 0em;
     }
-    .innerbox:hover{
+    .innerbox{
         color: white;
         font-size: 10px;
         opacity: 1;
@@ -416,6 +427,9 @@ hr{
 
 }
 @media (max-width:700px) {
+    #topnav{
+        transition-duration: 0ms;
+    }
     #topnav ul li a {
         display: none;
     }
@@ -425,6 +439,9 @@ hr{
     }
     #bottomnav{
         font-size: 10px;
+    }
+    nav.sticky #bottomnav{
+        margin-top: 16px;
     }
     .container{
         margin: 0px;
