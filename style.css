@@ -8,9 +8,6 @@ body{
 } 
 
 /* Navigation bar css */
-.navmobile{
-    display: none;
-}
 nav{
     top: 0; 
     width: 100%;
@@ -21,7 +18,7 @@ nav{
 nav.sticky{
     color: rgb(0, 255, 242);
     z-index:1;
-    position: sticky; 
+    position: fixed; 
 }
 /* top part of the navigation bar */
 #topnav{
@@ -56,6 +53,8 @@ nav.sticky #topnav{
     height: 60px;
 }
 #topnav img{
+    width: 70px;
+    height: 70px;
     transition-duration: 500ms;
 
 }
@@ -328,7 +327,7 @@ hr{
 
 @media (max-width: 860px){
     html, body {
-        overflow-x: hidden;
+        overflow-x:hidden;
     }
     
     .container{
@@ -336,8 +335,8 @@ hr{
         margin-bottom: -250px;
         display: grid;
         gap: 10px;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 20em 20em;
+        grid-template-columns: 30em 1fr;
+        grid-template-rows: 10em 20em 20em;
         grid-template-areas:
         "main main"
         "section section2"
@@ -350,7 +349,7 @@ hr{
     }
     #topnav{
         display: flex;
-        height: 150px;
+        height: 100px;
         background-color: rgb(31, 31, 31);
     }
     #topnav ul{
@@ -394,17 +393,32 @@ hr{
         width: 500px;
         
     }
+    .box2{
+        -webkit-filter: saturate(1);
+    }
+    .box3{
+
+        -webkit-filter: saturate(1);
+    }
+    .box4{
+        -webkit-filter: saturate(1);
+    }
+    .box4:hover{
+        -webkit-filter: saturate(1);
+    }
+    .box6{
+        -webkit-filter: saturate(1);
+    }
+    .box7{
+        -webkit-filter: saturate(1);
+    }
 
 }
-@media (max-width:400px) {
-    .navmobile{
-        position: fixed;
-        z-index: 1;
-        display: inline-block;
-        background-color: black;
-        width: 100%;
-        color: white;
+@media (max-width:700px) {
+    #topnav ul li a {
+        display: none;
     }
+
     .container{
         margin: 0px;
         margin-bottom: -250px;
@@ -432,8 +446,9 @@ hr{
         width: 160px;
         height: 160px;
     }
-    nav{
-        display: none;
+    .moreinfo ul li a{
+        font-size: 12px;
+    
     }
     
 }
