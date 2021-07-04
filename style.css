@@ -25,7 +25,7 @@ nav.sticky{
     display: flex;
     height: 100px;
     background-color: rgb(31, 31, 31);
-    transition-duration: 600ms;
+    transition-duration: 100ms;
     margin-bottom: -16px;
 
 }
@@ -62,10 +62,12 @@ nav.sticky #topnav img{
     -webkit-filter: invert();
 }
 .navicons{
+
     display: flex;
-    padding-top: 31px;
-    width: 15em;
     justify-content: space-evenly;
+    padding-top: 0px;
+    width: 10em;
+
     
 }
 .navicons a:hover{
@@ -83,7 +85,6 @@ nav.sticky #topnav img{
     height: 3em;
     color: white;
     background-color: inherit;
-    position: relative;
     margin-top: 1.3em;
 }
 
@@ -349,7 +350,7 @@ hr{
     }
     #topnav{
         display: flex;
-        height: 100px;
+        height: 80px;
         background-color: rgb(31, 31, 31);
     }
     #topnav ul{
@@ -373,7 +374,7 @@ hr{
         border: none;
         border-bottom: 3px solid grey;
         border-color: rgb(110, 110, 110);
-        width: 10em;
+        width: 15em;
         height: 3em;
         color: white;
         background-color: inherit;
@@ -418,7 +419,13 @@ hr{
     #topnav ul li a {
         display: none;
     }
-
+    #topnav img{
+        width: 70px;
+        height: 70px;
+    }
+    #bottomnav{
+        font-size: 10px;
+    }
     .container{
         margin: 0px;
         margin-bottom: -250px;
@@ -443,12 +450,21 @@ hr{
     .box5 img{
     
         margin-top: 25px;
-        width: 160px;
-        height: 160px;
+        width: 100px;
+        height: 100px;
     }
     .moreinfo ul li a{
         font-size: 12px;
     
+    }
+    #Search{
+        width: 25em;
+
+    }
+    .navicons{
+        justify-content:baseline;
+        margin-left: -80px;
+      
     }
     
 }
