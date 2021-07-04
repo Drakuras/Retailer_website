@@ -8,6 +8,9 @@ body{
 } 
 
 /* Navigation bar css */
+.navmobile{
+    display: none;
+}
 nav{
     top: 0; 
     width: 100%;
@@ -327,9 +330,7 @@ hr{
     html, body {
         overflow-x: hidden;
     }
-    body {
-     
-    }
+    
     .container{
         margin: 0px;
         margin-bottom: -250px;
@@ -396,6 +397,14 @@ hr{
 
 }
 @media (max-width:400px) {
+    .navmobile{
+        position: fixed;
+        z-index: 1;
+        display: inline-block;
+        background-color: black;
+        width: 100%;
+        color: white;
+    }
     .container{
         margin: 0px;
         margin-bottom: -250px;
