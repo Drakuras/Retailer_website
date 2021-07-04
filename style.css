@@ -324,6 +324,12 @@ hr{
 }
 
 @media (max-width: 860px){
+    html, body {
+        overflow-x: hidden;
+    }
+    body {
+     
+    }
     .container{
         margin: 0px;
         margin-bottom: -250px;
@@ -358,6 +364,11 @@ hr{
         transition-duration: 100ms;
         padding: 10px;
     }
+    #topnav img{
+        width: 40px;
+        height: 40px;
+    
+    }
     #Search{
         border: none;
         border-bottom: 3px solid grey;
@@ -383,4 +394,37 @@ hr{
         
     }
 
+}
+@media (max-width:400px) {
+    .container{
+        margin: 0px;
+        margin-bottom: -250px;
+        display: grid;
+        gap: 15px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 20em 10em 12em 10em 20em 10em;
+        grid-template-areas:
+        "main"
+        "section"
+        "section2"
+        "lastarea"
+        "onemore"
+        "section3"
+        "section4";
+    }
+    .snowboard img{
+        width: 300px;
+        overflow-x: hidden;
+        
+    }
+    .box5 img{
+    
+        margin-top: 25px;
+        width: 160px;
+        height: 160px;
+    }
+    nav{
+        display: none;
+    }
+    
 }
