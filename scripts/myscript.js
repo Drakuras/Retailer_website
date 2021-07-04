@@ -18,8 +18,3 @@ function scrollRotate() {
     let image = document.getElementsByTagName("img")
     image[1].style.transform = "rotate(" + window.pageYOffset + "deg)";
 }
-
-
-// let snowb_img = document.getElementsByTagName("img")
-// snowb_img[2].style.transform = "translateX(-" + window.scrollY + "px)";
-// console.log(window.scrollY)
