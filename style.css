@@ -103,7 +103,7 @@ nav.sticky #topnav img{
 
 /* Mid Area Css */
 .container{
-    margin-top: 40px;
+    margin-top: 90px;
     margin: 0px;
     display: grid;
     gap: 10px;
@@ -122,7 +122,7 @@ nav.sticky #topnav img{
 .box1image{
     left: 0;
     right: 0;
-    height: 70%;
+    height: 60%;
     z-index: 9999;
     background: url(./assets/mount-everest-summit-climbers-getty.jpg);
     background-position:center;
@@ -130,11 +130,9 @@ nav.sticky #topnav img{
 }
 .box1content{
     
-    padding: 0.5vh;
+    padding: 0.7vh;
     text-align: center;
     color: rgb(0, 0, 0);
-
-
 }
 .box1mid{
     display: flex;
