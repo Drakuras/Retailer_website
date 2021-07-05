@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 body{
     overflow-x: hidden;
-    background-color: rgb(230, 248, 255);
+    background-color: #ffcf98;
     margin: 0%;
     font-family: 'Oswald', sans-serif;
     background-image: url(data:image/png;base64,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);  
@@ -11,12 +11,8 @@ body{
 nav{
     top: 0; 
     width: 100%;
-    transition-duration: 500ms;
-    
-
 }
 nav.sticky{
-    transition-duration: 1500ms;
     color: rgb(0, 255, 242);
     z-index:1;
     position: fixed; 
@@ -25,11 +21,19 @@ nav.sticky{
 #topnav{
     display: flex;
     height: 80px;
-    background-color: rgb(31, 31, 31);
-    transition-duration: 100ms;
+    background: linear-gradient(155deg, rgba(255,93,0,1) 11%, rgba(106,160,128,1) 63%, rgba(0,254,255,1) 100%);
+    transition-duration: 1000ms;
     margin-bottom: -16px;
 
 }
+nav.sticky #topnav{
+    transition-duration: 100ms;
+}
+nav.sticky #topnav img{
+    transition-duration: 100ms;
+    margin-top: -3px;
+}
+
 #topnav ul{
     display: flex;
     justify-content: space-evenly;
@@ -39,16 +43,25 @@ nav.sticky{
     padding: 1em;
     list-style: none;
 }
+nav.sticky #topnav ul li{
+    margin-top: -10px;
+}
 #topnav ul li a {
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: large;
     text-decoration: none;
+    transition-duration: 100ms;
+    padding: 10px;
+    
+}
+nav.sticky #topnav ul li a {
+    color: rgb(255, 255, 255);
     transition-duration: 100ms;
     padding: 10px;
 }
 #topnav ul li a:hover{
     
-    color: rgb(0, 0, 0);
+    color: rgb(92, 255, 247);
 }
 nav.sticky #topnav{
     height: 60px;
@@ -56,6 +69,7 @@ nav.sticky #topnav{
 #topnav img{
     width: 70px;
     height: 70px;
+    margin-top: 10px;
     transition-duration: 500ms;
 
 }
@@ -63,16 +77,17 @@ nav.sticky #topnav img{
     -webkit-filter: invert();
 }
 .navicons{
-
+    margin-top: 35px;
     display: flex;
     justify-content: space-evenly;
     padding-top: 0px;
     width: 10em;
+    -webkit-filter:invert();
 
     
 }
 .navicons a:hover{
-    -webkit-filter:invert();
+    
 }
 .navicons a i{
     color: white;
@@ -80,8 +95,8 @@ nav.sticky #topnav img{
 
 #Search{
     border: none;
-    border-bottom: 3px solid grey;
-    border-color: rgb(110, 110, 110);
+    border-bottom: 3px solid;
+    border-color: rgb(2, 2, 2);
     width: 19em;
     height: 3em;
     color: white;
@@ -99,7 +114,7 @@ input[type="search"] {
 /* Bottom part of the navigation */
 #bottomnav{
     transition-duration: 500ms;
-    background-color: rgb(63, 63, 63);
+    background-color: rgb(0, 0, 0);
     height: 25px;
     text-align:center;
     color: rgb(255, 0, 0);
@@ -121,13 +136,13 @@ nav.sticky #bottomnav{
     margin: 0px;
     margin-bottom: -250px;
     display: grid;
-    gap: 10px;
+    gap: 20px;
     grid-template-columns: 20em 20em auto auto;
     grid-template-rows: 30em 20em 20em 20em;
     grid-template-areas:
     "main main main main"
-    "section section2 lastarea onemore"
-    "section3 section4 lastarea onemore"; 
+    "section section2 lastarea lastarea"
+    "section3 section4 lastarea lastarea"; 
 }
 .innerbox{
     height: 100%;
@@ -137,7 +152,7 @@ nav.sticky #bottomnav{
 }
 .innerbox:hover{
     color: white;
-    font-size: 40px;
+    font-size: 20px;
     opacity: 1;
     visibility: visible;
 
@@ -152,7 +167,7 @@ nav.sticky #bottomnav{
     right: 0;
     height: 100%;
     z-index: 1;
-    background: url(./assets/mount-everest-summit-climbers-getty.jpg);
+    background: url(./assets/main.jpg);
     background-position: center;
 
 }
@@ -177,10 +192,9 @@ nav.sticky #bottomnav{
 }
 .box2{
     background-color: rgb(177, 177, 177);
-    background: url(./assets/Best_ski_googles_2-1200x520.jpg);
+    background: url(./assets/Shoes.jpg);
     background-size:inherit;
-    background-position-x: right;
-    background-position-y: bottom;
+    background-position: right;
     grid-area: section;
     -webkit-filter: saturate(0.5);
 }
@@ -191,7 +205,7 @@ nav.sticky #bottomnav{
 
 .box3{
     background-color: rgb(177, 177, 177);
-    background: url(./assets/Ski\ Goggle\ \(Smith\ I_O\ Mag\ closeup\)\ \(m\).jpg);
+    background: url(./assets/new.jpg);
     background-size: cover;
     background-position: right;
     grid-area: section2;
@@ -203,7 +217,7 @@ nav.sticky #bottomnav{
 }
 .box4{
     background-color: rgb(177, 177, 177);
-    background: url(./assets/photo-1612964627570-769abf00d41f.jfif);
+    background: url(./assets/buckethat.jpg);
     background-size: cover;
     background-position: left;
     grid-area: section3;
@@ -215,19 +229,17 @@ nav.sticky #bottomnav{
 .box5{
 
     text-align: center;
-    border-radius: 100%;
-    background: linear-gradient(155deg, rgba(255,93,0,1) 11%, rgba(106,160,128,1) 63%, rgba(0,254,255,1) 100%);
     grid-area: section4;
 }
 
 .box5 img{
     
-    margin-top: 25px;
-    width: 260px;
-    height: 260px;
+    width: 100%;
+    height: 100%;
 }
 .box6{
-    background: url(./assets/l1-ski-aw20-jackets-image-1.jpg);
+    background: url(./assets/clothing.jpg);
+    background-size: cover;
     background-color: rgb(177, 177, 177);
     grid-area: lastarea;
     -webkit-filter: saturate(0.5);
@@ -235,25 +247,19 @@ nav.sticky #bottomnav{
 .box6:hover{
     -webkit-filter: saturate(1);
 }
-.box7{
-    background: url(./assets/marcel-hirscher-colours-making-of.jfif);
-    background-size: cover;
-    grid-area: onemore;
-    background-color: rgb(177, 177, 177);
-    -webkit-filter: saturate(0.5);
-}
-.box7:hover{
-    -webkit-filter: saturate(1);
-}
 
 /* end of container */
 /* snowboard area */
 .snowboard{
+    
     text-align: center;
     color: black;
     transition-duration: 1000ms;
     transform: translateX(2000px);
     
+}
+.snowboard img{
+    width: 50em;
 }
 .snowboard.translate{
     transition-duration: 500ms;
@@ -428,8 +434,8 @@ hr{
 
 }
 @media (max-width:700px) {
-    #topnav{
-        transition-duration: 0ms;
+    nav.sticky #topnav{
+        transition-duration: 1000ms;
     }
     #topnav ul li a {
         display: none;
@@ -439,6 +445,7 @@ hr{
         margin-left: -5px;
         width: 70px;
         height: 70px;
+        
     }
     #bottomnav{
         font-size: 10px;
@@ -452,13 +459,12 @@ hr{
         display: grid;
         gap: 15px;
         grid-template-columns: 1fr;
-        grid-template-rows: 20em 10em 12em 10em 20em 10em;
+        grid-template-rows: 20em 10em 12em 10em 10em;
         grid-template-areas:
         "main"
         "section"
         "section2"
         "lastarea"
-        "onemore"
         "section3"
         "section4";
     }
@@ -481,13 +487,14 @@ hr{
     
     }
     #Search{
+        background-color: transparent;
         position: absolute;
         left: 65px;
         top: 10px;
 
     }
     .navicons a{
-        margin-top: 25px;
+        margin-top: -15px;
         padding: 3px;
     }
     .preorder{
